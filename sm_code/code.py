@@ -13,11 +13,11 @@ GROQ_API_KEY = config_data["GROQ_API_KEY"]
 client = Groq(api_key=GROQ_API_KEY)
 
 # Streamlit page setup
-st.set_page_config(page_title="Stress Management AI", page_icon="🧘", layout="centered")
+st.set_page_config(page_title="Stress Management AI", page_icon="☮️", layout="centered")
 
 st.image(img_path, caption="🌿 The Journey of Your Peaceful Mind Starts Here 🌿", output_format='PNG', use_container_width=True)
 
-st.title("🧘 Stress Management Assistant")
+st.title("🧘 Stress Management Assistant 🧘‍♀️")
 
 st.write("Describe your current stress level, feelings, and lifestyle, and get a personalized plan.")
 
