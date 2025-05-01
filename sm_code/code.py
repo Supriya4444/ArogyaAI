@@ -14,7 +14,7 @@ client = Groq(api_key=GROQ_API_KEY)
 # Streamlit page setup
 st.set_page_config(page_title="Stress Management AI", page_icon="🧘", layout="centered")
 
-st.image("C:\Users\Supriya\OneDrive\Desktop\finalyearproj2\sm_code\stress_relief3.png", caption="🌿 The Journey of Your Peaceful Mind Starts Here 🌿", use_container_width=True)
+st.image("C:\\Users\\Supriya\\OneDrive\\Desktop\\finalyearproj2\\sm_code\\stress_relief3.png", caption="🌿 The Journey of Your Peaceful Mind Starts Here 🌿", use_container_width=True)
 
 st.title("🧘 Stress Management Assistant")
 
