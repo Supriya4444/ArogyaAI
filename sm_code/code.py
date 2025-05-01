@@ -19,9 +19,6 @@ st.image(img_path, caption="🌿 The Journey of Your Peaceful Mind Starts Here �
 
 st.title("🧘 Stress Management Assistant")
 
-st.write("Current Working Directory: ", os.getcwd())
-st.write("Image Path: ", img_path)
-
 st.write("Describe your current stress level, feelings, and lifestyle, and get a personalized plan.")
 
 # User input
