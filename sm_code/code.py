@@ -6,6 +6,7 @@ from groq import Groq
 # Load API key from config.json
 working_dir = os.path.dirname(os.path.abspath(__file__))
 config_data = json.load(open(f"{working_dir}/config.json"))
+img_path = os.path.join(os.path.dirname(__file__), 'stress_relief.png')
 GROQ_API_KEY = config_data["GROQ_API_KEY"]
 
 # Initialize Groq client
@@ -14,9 +15,12 @@ client = Groq(api_key=GROQ_API_KEY)
 # Streamlit page setup
 st.set_page_config(page_title="Stress Management AI", page_icon="🧘", layout="centered")
 
-st.image("stress_relief.png", caption="🌿 The Journey of Your Peaceful Mind Starts Here 🌿", output_format='PNG', use_container_width=True)
+st.image(img_path, caption="🌿 The Journey of Your Peaceful Mind Starts Here 🌿", output_format='PNG', use_container_width=True)
 
 st.title("🧘 Stress Management Assistant")
+
+st.write("Current Working Directory: ", os.getcwd())
+st.write("Image Path: ", img_path)
 
 st.write("Describe your current stress level, feelings, and lifestyle, and get a personalized plan.")
 
